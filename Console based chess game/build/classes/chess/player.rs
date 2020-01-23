@@ -1,0 +1,2 @@
+chess.Player
+player
