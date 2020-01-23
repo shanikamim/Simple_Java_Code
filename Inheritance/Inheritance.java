@@ -7,7 +7,7 @@ package lab3_inheritance;
 
 /**
  *
- * @author Shanzida Anika
+ * @author Shanzida Anika Mim
  */
 public class Lab3_Inheritance {
 
@@ -17,6 +17,7 @@ public class Lab3_Inheritance {
     public static void main(String[] args) {
         // *********** Parent-Child **********
 //        Child child=new Child();
+//        child.setParentVar(15);
 //        child.C();
 //        child.P(); 
 //        Parent parent=new Parent();
@@ -35,7 +36,7 @@ public class Lab3_Inheritance {
         bird.sleep();
         bird.eat();
 
-        dog.sleep();
-        dog.eat();
+//        dog.sleep();
+//        dog.eat();
     } 
 }

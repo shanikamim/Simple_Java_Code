@@ -7,10 +7,10 @@ package lab3_inheritance;
 
 /**
  *
- * @author Shanzida Anika
+ * @author Shanzida Anika Mim
  */
 public class Child extends Parent{
     void C(){
-        System.out.println("Child Class Method.");
+        System.out.println("Child Class Method:"+getParentVar());
     }
 }

@@ -7,10 +7,10 @@ package lab3_inheritance;
 
 /**
  *
- * @author Shanzida Anika
+ * @author Shanzida Anika Mim
  */
 public class Animal {
-    	public Animal() {
+    	public Animal() { //Constructor
 		System.out.println("A new animal has been created!");
 	}
 	

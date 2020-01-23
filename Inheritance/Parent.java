@@ -3,15 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab3_inheritance;
+package inheritance;
 
 /**
  *
  * @author Shanzida Anika Mim
  */
 public class Parent {
-    int parentVar;
+    private int parentVar;
     void P(){
         System.out.println("Parent Class Method.");
     }
+    int getParentVar(){
+        return parentVar;
+    }
+    void setParentVar(int parentVar){
+        this.parentVar=parentVar;
+    }
+    
 }
