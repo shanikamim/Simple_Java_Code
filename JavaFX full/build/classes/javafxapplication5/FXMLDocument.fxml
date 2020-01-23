@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.FXMLDocumentController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="157.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="27.0" text="Name" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="30.0" />
+            <Label layoutX="16.0" layoutY="52.0" text="Date of birth" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="65.0" />
+            <Label layoutX="14.0" layoutY="81.0" text="Gender" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0" />
+            <Label layoutX="20.0" layoutY="119.0" text="Reservations" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0" />
+            <Label layoutX="20.0" layoutY="155.0" text="Technologies Known" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="150.0" />
+            <Label layoutX="15.0" layoutY="183.0" text="Educational Qualification" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="230.0" />
+            <Label layoutX="30.0" layoutY="229.0" text="Location" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="313.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="133.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+         <children>
+            <RadioButton fx:id="rb_female" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" onAction="#getGender" text="Female" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender_group" />
+               </toggleGroup>
+            </RadioButton>
+            <Button fx:id="res_no" layoutX="18.0" layoutY="136.0" mnemonicParsing="false" onAction="#getReservationNo" text="No" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0" />
+            <CheckBox fx:id="cb_c" layoutX="15.0" layoutY="173.0" mnemonicParsing="false" onAction="#getTechnology" text="C#" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="150.0" />
+            <Button fx:id="button_reg" layoutX="58.0" layoutY="353.0" mnemonicParsing="false" onAction="#saveData" style="-fx-background-color: blue;" text="Register" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="name_textfield" layoutX="14.0" layoutY="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+            <DatePicker fx:id="dob_picker" layoutX="14.0" layoutY="71.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+            <RadioButton fx:id="rb_male" layoutX="14.0" layoutY="96.0" mnemonicParsing="false" onAction="#getGender" text="Male" toggleGroup="$gender_group" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0" />
+            <Button fx:id="res_yes" layoutX="12.0" layoutY="129.0" mnemonicParsing="false" onAction="#getReservationYes" text="Yes" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="120.0" />
+            <CheckBox fx:id="cb_java" layoutX="10.0" layoutY="162.0" mnemonicParsing="false" onAction="#getTechnology" text="Java" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="150.0" />
+            <ListView fx:id="eq_list" layoutX="14.0" layoutY="186.0" onMouseClicked="#getEducationInformation" prefHeight="103.0" prefWidth="207.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="180.0" />
+            <ComboBox fx:id="loc" layoutX="14.0" layoutY="306.0" onAction="#getLocation" prefWidth="150.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="313.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
